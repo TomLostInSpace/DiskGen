@@ -6,7 +6,7 @@ from src.diskgen.image import create_disk_from_profile
 from src.diskgen.io_utils import save_to_fits
 
 # 1. Create a Power-Law Intensity Profile
-radius = np.linspace(0.1, 100, 500)
+radius = np.linspace(1, 100, 500)
 profile = Profile.powerlaw(radius, i_0=100.0, r_0=20.0, gam=0.8)
 plot_profile(profile, i_0=100.0, r_0=20.0, gam=0.8)
 
