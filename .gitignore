@@ -1,0 +1,29 @@
+#Local Env
+.venv/
+
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+
+# Output and build
+Notebooks/Output/
+build/
+dist/
+*.egg-info/
+
+
+# IDEs
+.vscode/
+
+#Misc
+.idea/
+.ipynb_checkpoints/
+*.tmp
+*.so
+*.npy
+*.npz
+*.csv
+*.fits
+*.png
+*.jpg
+*.DS_Store

@@ -1,0 +1,24 @@
+[project]
+name = "diskgen"
+version = "0.1.0"
+description = "A Python package for generating synthetic disk data."
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+preview = true
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+line-ending = "auto"
+
+[tool.ruff.lint]
+select = ["E", "F", "W"]
+extend-select = ["E2", "E231"]
+fixable = ["E", "F", "W", "E2", "E231"]
+exclude = [".venv", "__pycache__", "build", "dist"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
