@@ -1,9 +1,9 @@
 import numpy as np
 import matplotlib.pyplot as plt
-from diskgen.profile import Profile
-from diskgen.plotting import plot_profile
-from diskgen.image import create_disk_from_profile
-from diskgen.io_utils import save_to_fits
+from src.diskgen.profile import Profile
+from src.diskgen.plotting import plot_profile
+from src.diskgen.image import create_disk_from_profile
+from src.diskgen.io_utils import save_to_fits
 
 # 1. Create a Power-Law Intensity Profile
 radius = np.linspace(0.1, 100, 500)
