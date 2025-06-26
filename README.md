@@ -23,7 +23,7 @@
 ```bash
 git clone https://github.com/user/DiskGen.git
 cd DiskGen
-pip install -r requirements.txt
 
 ```bash
 pip install -r requirements.txt
+pip install -e .
