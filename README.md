@@ -1,5 +1,5 @@
 # DiskGen
-# Simple radial profile generator for synthetic protoplanetary disks by TomLostInSpace (:
+# Simple radial profile generator for synthetic protoplanetary disks
 
 ## Requirements
 - Python 3.8+
