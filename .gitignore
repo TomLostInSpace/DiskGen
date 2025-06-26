@@ -16,6 +16,7 @@ dist/
 .vscode/
 
 #Misc
+ruff.toml
 .idea/
 .ipynb_checkpoints/
 *.tmp
