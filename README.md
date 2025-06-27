@@ -7,13 +7,11 @@
 
 
 ## Project Structure
-
 - `src/diskgen/`: Main source code
 - `Notebooks/`: Jupyter notebook tests and experiments
 - `Notebooks/Output/`: Automatically generated FITS images (ignored in git)
 
 ## Features
-
 - Create radial intensity profiles with power laws
 - Add Gaussian-shaped rings
 - Generate 2D disk images
