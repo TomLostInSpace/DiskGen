@@ -21,7 +21,7 @@
 
 ## Setup
 ```bash
-git clone https://github.com/user/DiskGen.git
+git clone https://github.com/TomLostInSpace/DiskGen.git
 cd DiskGen
 
 ```bash
