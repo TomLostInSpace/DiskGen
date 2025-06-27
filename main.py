@@ -1,18 +1,22 @@
 import numpy as np
 import matplotlib.pyplot as plt
-from src.diskgen.profile import Profile
+from src.diskgen.diskprofile import DiskProfile
 from src.diskgen.plotting import plot_profile
 from src.diskgen.image import create_disk_from_profile
 from src.diskgen.io_utils import save_to_fits
 
 # 1. Create a Power-Law Intensity Profile
+i_zero = 10**6
+r_zero = 20.0
+gamma = 0.8
+
 radius = np.linspace(1, 100, 1000)
-profile = Profile.powerlaw(radius, i_0=100.0, r_0=20.0, gam=0.8)
-plot_profile(profile, i_0=100.0, r_0=20.0, gam=0.8)
+profile = DiskProfile.powerlaw(radius, i_0=i_zero, r_0=r_zero, gam=gamma)
+plot_profile(profile, i_0=i_zero, r_0=r_zero, gam=gamma, logScale=False)
 
 # 2. Add a Gaussian Ring
-profile.add_ring(ring_radius=40, amplitude=50.0, width=5.0)
-plot_profile(profile)
+profile.add_ring(ring_radius=40, amplitude=10**6, width=5.0)
+plot_profile(profile, i_0=i_zero, r_0=r_zero, gam=gamma, logScale=False)
 
 # 3. Generate 2D Image from Profile
 image = create_disk_from_profile(profile, image_size=256)
