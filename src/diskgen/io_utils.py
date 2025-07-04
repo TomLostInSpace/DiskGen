@@ -13,7 +13,7 @@ def save_to_fits(image, filename="disk_image.fits"):
     """
     # Get today's date string
     today = datetime.now().strftime("%Y-%m-%d")
-    output_dir = Path("Output") / today
+    output_dir = Path("../Output") / today
     output_dir.mkdir(parents=True, exist_ok=True)
 
     file_path = output_dir / filename
