@@ -24,7 +24,7 @@ class DiskProfile:
         Add a Gaussian-shaped ring to the profile.
         """
         ring = amplitude * np.exp(-0.5 * ((self.radius - ring_radius) / width) ** 2)
-        self.intensity += ring
+        self.intensity -= ring
 
     # WIP
     def add_noise(self, noise_level=0.01):

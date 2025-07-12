@@ -7,8 +7,10 @@ __pycache__/
 
 # Output and build
 Notebooks/Output/
+Output/
 build/
 dist/
+fits/
 *.egg-info/
 
 
