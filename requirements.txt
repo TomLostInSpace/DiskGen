@@ -4,3 +4,6 @@ numpy==2.3.1
 scipy
 notebook
 ruff
+emcee
+corner
+tqdm
